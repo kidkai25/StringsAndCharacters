@@ -1,4 +1,5 @@
 ﻿using System;
+using xx;
 
 namespace StringsAndCharacters
 {
@@ -6,7 +7,19 @@ namespace StringsAndCharacters
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //CharStrExtMethods.GetCharKindInString("xx")l
+            int i = 10;
+           
+            string data = "abcdefg";
+            if (data.GetCharKindInString(4) == CharKind.Digit)
+            {
+                Console.WriteLine("Contains");
+            }
+            else
+            {
+                Console.WriteLine("Doesn't Contain ");
+            }
+                 
         }
     }
 }
